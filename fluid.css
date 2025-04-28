@@ -1,0 +1,36 @@
+/* Base font size scaling */
+  html {
+    font-size: clamp(12px, 1vw + 1rem, 18px); /* Scales between 12px and 18px */
+  }
+
+  /* Universal box-sizing */
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+
+  /* Body default setup */
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+    line-height: 1.6;
+    background: #fafafa;
+    color: #333;
+    min-height: 100vh;
+  }
+
+  /* Fluid spacing setup */
+  :root {
+    --space-xs: clamp(0.5rem, 0.5vw, 1rem);
+    --space-sm: clamp(1rem, 1vw, 1.5rem);
+    --space-md: clamp(1.5rem, 2vw, 2rem);
+    --space-lg: clamp(2rem, 3vw, 3rem);
+    --space-xl: clamp(3rem, 5vw, 5rem);
+  }
+
+  /* Container: centered layout */
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: var(--space-lg);
+  }
