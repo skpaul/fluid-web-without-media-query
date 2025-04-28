@@ -1,5 +1,5 @@
 /* Base font size scaling */
-  html {
+html {
     font-size: clamp(12px, 1vw + 1rem, 18px); /* Scales between 12px and 18px */
   }
 

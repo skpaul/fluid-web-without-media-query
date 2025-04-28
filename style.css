@@ -1,0 +1,60 @@
+
+  /* Hero section */
+  .hero {
+    background: white;
+    padding: var(--space-xl);
+    border-radius: 1rem;
+    text-align: center;
+    box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.1);
+  }
+
+  .hero h1 {
+    font-size: clamp(2rem, 4vw, 3rem);
+    margin-bottom: var(--space-sm);
+  }
+
+  .hero p {
+    font-size: clamp(1rem, 2vw, 1.5rem);
+    margin-bottom: var(--space-md);
+  }
+
+  .hero button {
+    font-size: clamp(1rem, 2vw, 1.25rem);
+    padding: var(--space-xs) var(--space-sm);
+    border: none;
+    border-radius: 9999px;
+    background: #0077ff;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+
+  .hero button:hover {
+    background: #005fcc;
+  }
+
+  /* Feature section */
+  .features {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: var(--space-lg);
+    margin-top: var(--space-xl);
+  }
+
+  .feature {
+    background: white;
+    padding: var(--space-lg);
+    border-radius: 1rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+
+  .feature h2 {
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    margin-bottom: var(--space-sm);
+  }
+
+  .feature p {
+    font-size: clamp(1rem, 2vw, 1.25rem);
+    margin-bottom: var(--space-lg);
+  }
